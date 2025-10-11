@@ -11,8 +11,8 @@ VERSION="1.3"
 clear
 echo -e "${CYAN}${BOLD}"
 echo "╔══════════════════════════════════════════════════════╗"
-echo "║       IKHSAN Protect + Panel Builder         ║"
-echo "║                    Version $VERSION                       ║"
+echo "║       IkhsanStore Protect + Panel Builder                      ║"
+echo "║                    Version $VERSION                            ║"
 echo "╚══════════════════════════════════════════════════════╝"
 echo -e "${RESET}"
 
@@ -38,7 +38,7 @@ if [ "$OPSI" = "1" ]; then
     in_func == 1 && /^\s*{/ {
         print;
         print "        if ($request->user()->id !== " admin_id ") {";
-        print "            throw new DisplayException(\"Lu Siapa Mau Delet User Lain Tolol?Izin Dulu Sama Id 1 Kalo Mau Delet©Protect By IKHSAN V'"$VERSION"')\");";
+        print "            throw new DisplayException(\"Lu Siapa Mau Delet User Lain Tolol?Izin Dulu Sama Id 1 Kalo Mau Delet©Protect By IkhsanStore V'"$VERSION"')\");";
         print "        }";
         in_func = 0; next;
     }
@@ -72,7 +72,7 @@ BEGIN {
         print;
         print "        \$user = Auth::user();";
         print "        if (\$user && \$user->id !== " admin_id ") {";
-        print "            throw new DisplayException(\"Lu Siapa Mau Delet Server Lain Tolol?Izin Dulu Sama Id 1 Kalo Mau Delet©Protect By IKHSAN V'"$VERSION"')\");";
+        print "            throw new DisplayException(\"Lu Siapa Mau Delet Server Lain Tolol?Izin Dulu Sama Id 1 Kalo Mau Delet©Protect By IkhsanStore V'"$VERSION"')\");";
         print "        }";
         in_func = 0; next;
     }
