@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # ╔════════════════════════════════════════════════════════════════════╗
-# ║ 🛡️  IKHSAN PROTECTOR SYSTEM v1.3                            ║
-# ║ Proteksi Controller Admin hanya untuk ID tertentu + Restore       ║
+# ║ 🛡️  IKHSAN PROTECTOR SYSTEM v1.3                                               ║
+# ║ Proteksi Controller Admin hanya untuk ID tertentu + Restore                    ║
 # ╚════════════════════════════════════════════════════════════════════╝
 
 # Warna
@@ -17,8 +17,8 @@ VERSION="1.4"
 clear
 echo -e "${CYAN}${BOLD}"
 echo "╔══════════════════════════════════════════════════════╗"
-echo "║         IKHSAN Protect + Panel Builder         ║"
-echo "║                    Version $VERSION                       ║"
+echo "║         IkhsanStore Protect + Panel Builder                    ║"
+echo "║                    Version $VERSION                            ║"
 echo "╚══════════════════════════════════════════════════════╝"
 echo -e "${RESET}"
 
@@ -74,7 +74,7 @@ if [[ "$MODE" == "1" ]]; then
             print;
             print "        $user = Auth::user();";
             print "        if (!$user || $user->id !== " admin_id ") {";
-            print "            abort(403, \"IKHSAN Protect - Akses ditolak\");";
+            print "            abort(403, \"Ikhsan Protect - Akses ditolak\");";
             print "        }";
             in_func = 0; next;
         }
